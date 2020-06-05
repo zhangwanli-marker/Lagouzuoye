@@ -1,5 +1,7 @@
 ##文件
-    -1.open(...)方法
-        open(file,mode='r',buffering=-1,encodeing=None)
-            
-cedc bncb**
+echo "# Lagouzuoye" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/zhangwanli-marker/Lagouzuoye.git
+git push -u origin master
