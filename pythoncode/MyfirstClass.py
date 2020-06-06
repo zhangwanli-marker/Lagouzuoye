@@ -17,10 +17,13 @@ class  Fish:
         self.x -=1
         self.y -=1
         print("鱼现在的位置为(%s,%s)" %(self.x,self.y))
+
     def eat(self):
 
         if self.hungry:
             print("我好饿，我要吃东西*><*")
         else:
             print("吃饱了，好开心><")
+    def sleep(self):
+        pass
 
