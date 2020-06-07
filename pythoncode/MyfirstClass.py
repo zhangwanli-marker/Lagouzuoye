@@ -1,22 +1,24 @@
-class  Fish:
-    def __init__(self,x,y):
+class Fish:
+    def __init__(self, x, y):
         self.x = x
         self.y = y
         self.hungry = True
-        print("鱼的初始化位置为：%s,%s" %(self.x,self.y))
+        print("鱼的初始化位置为：%s,%s" % (self.x, self.y))
         '''
         有参数返回，返回值为print的输出值
         '''
 
     def bite(self):
         pass
+
     '''
     无参数时默认返回none
     '''
+
     def move(self):
-        self.x -=1
-        self.y -=1
-        print("鱼现在的位置为(%s,%s)" %(self.x,self.y))
+        self.x -= 1
+        self.y -= 1
+        print("鱼现在的位置为(%s,%s)" % (self.x, self.y))
 
     def eat(self):
 
@@ -24,6 +26,6 @@ class  Fish:
             print("我好饿，我要吃东西*><*")
         else:
             print("吃饱了，好开心><")
+
     def sleep(self):
         pass
-
