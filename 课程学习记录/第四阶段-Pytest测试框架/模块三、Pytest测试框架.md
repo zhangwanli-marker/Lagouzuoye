@@ -21,7 +21,19 @@
  
 ###2.3.pytest也可以执行unittest框架写的用例和方法
 
-
+##3.p###ytest的安装
+    .pip install pytest
+    .pip install -U pytest
 ##unittest框架介绍
-##unittest实战
-###
+##3.pytest实战
+    测试用例的运行方式
+        3.1.pytest解释器
+        3.2.Python解释器---增加一个入口函数，或者定义一个class类（）不带__init__()方法
+        if __name__=="main":
+            pytest.main(['test_a.py])'
+            pytest.main(['test_a.py::TestDemo','-v'])
+         3.pytest -k '表达式' -v
+            pytest -k 'test_a or test_b' -v
+##4.参数化
+    @pytest.mark.parametriz('a,b',[(10,20),(1,1),(1,2)])
+

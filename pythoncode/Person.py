@@ -1,6 +1,3 @@
-from pythoncode import yaml
-
-
 class Person:
     def __init__(self,name,gender,age,money):
         self.name:str = "default"
@@ -27,4 +24,3 @@ class Person:
 
     Person.run()
 
-    yaml
