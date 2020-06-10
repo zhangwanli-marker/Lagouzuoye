@@ -60,8 +60,8 @@ class Dog(Animal):
         print("小狗汪汪叫")
 
 with open(r'E:/测试开发学习/git/Pythoncode/Lagouzuoye/pythoncode/mydata.yml',encoding='UTF-8')  as f:
-    data = yaml.load(f, Loader=yaml.FullLoader)
+    data = yaml.safe_load(f)
     print (data)
 
-    cat = Cat()
+    cat = Cat(data)
 
