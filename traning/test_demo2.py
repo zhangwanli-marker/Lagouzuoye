@@ -1,3 +1,6 @@
+import pytest
+
+
 def setup_module():
     print("模块级别的的setup")
 def teardown_module():
@@ -33,3 +36,8 @@ class Testclass:
 
     def test_case2(self):
         print("这是一个内部方法")
+
+    @pytest.mark.add
+
+
+     
