@@ -1,0 +1,14 @@
+-&cat
+  "name":"Tom"
+  "color":"白色"
+  "age":"2"
+  "gender":"female"
+  "hair":"短毛"
+
+-&dog
+  "name":"白色"
+  "color":"白色"
+  "age":"2"
+  "gender":"female"
+  "hair":"短毛"
+
