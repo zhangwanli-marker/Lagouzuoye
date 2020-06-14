@@ -1,9 +1,15 @@
 class Person:
+
+    name:str = "default"
+    gender:str ="default"
+    age:int = 20
+    money:float = 1000
+
     def __init__(self,name,gender,age,money):
-        self.name:str = "default"
-        self.gender:str ="default"
-        self.age:int = 20
-        self.money:float = 1000
+        self.name = name
+        self.gender =gender
+        self.age = age
+        self.money =money
 
     def set_name(self,name):
         self.name = name
@@ -11,16 +17,28 @@ class Person:
         print("is eating")
 
     def sleep(self):
-        pass
+        print("is sleeping")
 
     def run(self):
-        pass
+        print("is sleeping")
     @classmethod
-    def make_monney:
+    def classmethod(cls):
         pass
+    @staticmethod
+    def make_monney:
+        paprint("can make money")
 
-    p =Person()
+    p = Person(1,2,2,3)
     print(p.name)
-
     Person.run()
+'''
+1.声明类方法，类和实例可以调用
+@classmethod
+    def classmethod(cls):
+        pass
+2.定义静态方法@staticmethod
+    @staticmethod
+    def make_monney:
+        PASS
 
+'''
