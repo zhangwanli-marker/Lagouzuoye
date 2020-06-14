@@ -27,7 +27,9 @@ class Cat(Animal):
     #     self.hair: str = hair
     # - 复写父类的__init__方法，继承父类的属性，
     def __init__(self, name, color, age, gender, hair="短毛"):
-        super(Animal, self).__init__(name, color, age, gender)
+
+        super().__init__(name,color,age,gender)
+    #     super(Cat, self).__init__(name, color, age, gender)
         # 添加一个新的属性，毛发=短毛，
         self.hair = hair
 
@@ -41,7 +43,8 @@ class Cat(Animal):
 class Dog(Animal):
     # - 复写父类的__init__方法，继承父类的属性，
     def __init__(self, name, color, age, gender, hair="长毛"):
-        super(Animal, self).__init__(name, color, age, gender)
+        super().__init__(name, color, age, gender)
+        # super(Dog, self).__init__(name, color, age, gender)
         # 添加一个新的属性，毛发=长毛，
         self.hair = hair
 
