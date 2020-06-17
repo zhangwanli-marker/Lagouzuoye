@@ -16,3 +16,4 @@ class Goldfish(Fish):
         else:
             print("吃饱了，好开心><")
 
+
