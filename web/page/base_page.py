@@ -8,7 +8,8 @@ class BasePage:
 
     def __init__(self, base_driver: WebDriver = None):
         if base_driver is None:
-            option = Options().debugger_address('http://localhost:9222/')
+            option =Options()
+            option.debugger_address = "localhost:9222"
             self.driver = webdriver.Chrome(options=option)
 
         else:
