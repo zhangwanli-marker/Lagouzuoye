@@ -7,3 +7,6 @@ class TestAddMember:
 
     def test_add_member(self):
         self.main.goto_addmember().add_member()
+
+    def teardown(self):
+        self.main.quit()

@@ -2,8 +2,8 @@ from time import sleep
 
 from selenium.webdriver.common.by import By
 
-from page.base_page import BasePage
-from page.connect_page import Connect
+from web.page.base_page import BasePage
+from web.page.connect_page import Connect
 
 
 class AddMember(BasePage):
