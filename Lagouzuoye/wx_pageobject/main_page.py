@@ -12,7 +12,7 @@ class Main(BasePage):
     #
     #     return AddMember(self.driver)
 
-    def goto_conect(self):
+    def goto_connect(self):
         self.driver.find_element(By.ID, "menu_contacts").click()
 
         return Connect(self.driver)

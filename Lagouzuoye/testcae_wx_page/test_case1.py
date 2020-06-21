@@ -6,7 +6,7 @@ class TestAddMember:
         self.main = Main()
 
     def test_add_member(self):
-        self.main.goto_conect()
+        self.main.goto_connect()
 
     def teardown(self):
         self.main.quit()
