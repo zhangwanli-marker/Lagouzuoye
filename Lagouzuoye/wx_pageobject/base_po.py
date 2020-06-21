@@ -23,7 +23,7 @@ class BasePage:
         else:
             self.driver = driver_basepage
 
-        if self._base_url == "":
+        if self._base_url != "":
             self.driver.get(self._base_url)
 
         # 增加隐式等待
