@@ -11,10 +11,7 @@
 #
 # if __name__ == "__main__":
 #     name()
-
-
-
-from selenium import webdriver
+from selenium.webdriver.chrome import webdriver
 
 
 def test_selenium():
