@@ -59,7 +59,7 @@ class Dog(Animal):
     def canshout(self):
         print("小狗汪汪叫")
 
-with open(r'E:/测试开发学习/git/Pythoncode/Lagouzuoye/pythoncode/mydata.yml',encoding='UTF-8')  as f:
+with open(r'E:/测试开发学习/git/Pythoncode/Lagouzuoye1/pythoncode/mydata.yml',encoding='UTF-8')  as f:
     data = yaml.safe_load(f)
     print (data)
 
