@@ -3,9 +3,9 @@ from time import sleep
 
 from selenium.webdriver.common.by import By
 
-from Lagouzuoye.web.BasePase.base_page import BasePage
-from Lagouzuoye.web.BasePase.loginpage import LoginPage
-from Lagouzuoye.web.BasePase.registerpage import RegisterPage
+from web.BasePase.base_page import BasePage
+from web.BasePase.loginpage import LoginPage
+from web.BasePase.registerpage import RegisterPage
 
 
 class MainPage(BasePage):
@@ -18,6 +18,5 @@ class MainPage(BasePage):
 
     def gotologin(self):
         sleep(2)
-        self.find(By.CSS_SELECTOR,'index_top_operation_loginBtn').click()
+        self.find(By.CSS_SELECTOR, '.index_top_operation_loginBtn').click()
         return LoginPage(self._driver)
-
